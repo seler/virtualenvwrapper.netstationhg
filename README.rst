@@ -1,10 +1,10 @@
 ..   -*- mode: rst -*-
 
 =============================
- virtualenvwrapper.bitbucket
+ virtualenvwrapper.netstationhg
 =============================
 
-``virtualenvwrapper.bitbucket`` is a template for virtualenvwrapper_
+``virtualenvwrapper.netstationhg`` is a template for virtualenvwrapper_
 to extend its project-management features.  It automatically clones a
 BitBucket_ repository when creating a new project directory.
 

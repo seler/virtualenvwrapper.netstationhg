@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-PROJECT = 'virtualenvwrapper.bitbucket'
+PROJECT = 'virtualenvwrapper.netstationhg'
 VERSION = '1.2'
 
 # Bootstrap installation of Distribute
@@ -60,7 +60,7 @@ def find_package_data(
 
     Note patterns use wildcards, or can be exact paths (including
     leading ``./``), and all searching is case-insensitive.
-    
+
     This function is by Ian Bicking.
     """
 
@@ -112,16 +112,13 @@ def find_package_data(
 setup(
     name = PROJECT,
     version = VERSION,
-    
+
     description = 'virtualenvwrapper plugin to manage a project work directory based on a BitBucket repository',
     long_description = long_description,
-    
-    author = 'Doug Hellmann',
-    author_email = 'doug.hellmann@gmail.com',
 
-    url = 'http://www.doughellmann.com/projects/%s/' % PROJECT,
-    download_url = 'http://www.doughellmann.com/downloads/%s-%s.tar.gz' % \
-                    (PROJECT, VERSION),
+    author = 'Rafal Selewonko',
+    author_email = 'rselewonko@murator.com.pl',
+
 
     classifiers = [ 'Development Status :: 5 - Production/Stable',
                     'License :: OSI Approved :: BSD License',
@@ -132,7 +129,7 @@ setup(
 
     platforms = ['Any'],
 
-    provides=['virtualenvwrapper.bitbucket',
+    provides=['virtualenvwrapper.netstationhg',
               ],
     requires=['virtualenv',
               'virtualenvwrapper (>=2.9)',
@@ -143,16 +140,16 @@ setup(
     packages = find_packages(),
     include_package_data = True,
     # Scan the input for package information
-    # to grab any data files (text, images, etc.) 
+    # to grab any data files (text, images, etc.)
     # associated with sub-packages.
-    package_data = find_package_data('virtualenvwrapper', 
+    package_data = find_package_data('virtualenvwrapper',
                                      package='virtualenvwrapper',
                                      only_in_packages=False,
                                      ),
 
     entry_points = {
         'virtualenvwrapper.project.template': [
-            'bitbucket = virtualenvwrapper.bitbucket:template',
+            'netstationhg = virtualenvwrapper.netstationhg:template',
             ],
         },
 
