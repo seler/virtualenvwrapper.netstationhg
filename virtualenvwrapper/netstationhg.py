@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 
 
 def get_url(project):
-    url = 'ssh://wwwedit@bitbucket.org/hg/{project}'.format(project=project)
+    url = 'ssh://wwwedit@setka/hg/{project}'.format(project=project)
     return url
 
 
